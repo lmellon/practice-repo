@@ -1,0 +1,4 @@
+# algo practice
+const findNumber  = () => {
+
+};
