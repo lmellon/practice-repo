@@ -135,14 +135,56 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 // Access and console.log "Waldo"
 // console.log(whereIsWaldo[3]);
 // => [ 'Petunia', [ 'Baked Goods', 'Waldo' ] ]
-console.log(whereIsWaldo[3][1][1]);
-=> Waldo
+// console.log(whereIsWaldo[3][1][1]);
+// => Waldo
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// for ( i = 1; i <= 20; i ++) {
+//     console.log("Love me, pet me! HSSSSSS!");
+// }
 
+// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+// let catTalk = ["human, why are you taking pictures of me?", "the catnip made me do it", "why does the red dot always get away?"]
+//
+// for ( i = 1; i <= 20; i ++) {
+//     if (i % 2 === 0) {
+//         let random = Math.floor(Math.random() * 3)
+//         console.log(catTalk[random]);
+//     } else {
+//         console.log("Love me, pet me! HSSSSSS!");
+//     }
+// }
 
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+// Find the median number in the following nums array, then console.log that number.
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]
+//
+// console.log(Math.floor(nums.length / 2));
+// => 12
+//
+// console.log(nums[12]);
+// => 19
+
+///////////////////////////////
+//  SAVINGS ACCOUNT
+//////////////////////////////
+//Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+    // let bank_account = 0
+    // for ( i = 1; i <= 10; i ++) {
+    //     bank_account += i;
+    // }
+    // console.log("your account has $" + bank_account);
+
+// You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+let pay = 0
+let bank_account = 0
+for (let i = 1; i <= 100; i ++) {
+    pay += i;
+    bank_account = pay * 2;
+}
+console.log('your account has $' + bank_account);
