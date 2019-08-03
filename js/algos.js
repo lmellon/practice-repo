@@ -181,10 +181,43 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
     // console.log("your account has $" + bank_account);
 
 // You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
-let pay = 0
-let bank_account = 0
-for (let i = 1; i <= 100; i ++) {
-    pay += i;
-    bank_account = pay * 2;
-}
-console.log('your account has $' + bank_account);
+    // let pay = 0
+    // let bank_account = 0
+    // for (let i = 1; i <= 100; i ++) {
+    //     pay += i;
+    //     bank_account = pay * 2;
+    // }
+    // console.log('your account has $' + bank_account);
+
+////////////////////////////////
+//  Fibonacci
+////////////////////////////////
+// linear approach
+    // const fib = (n) => {
+    //     let a = 0;
+    //     let b = 1;
+    //     // f is the result of adding the two previous numbers.  it is the Fibonacci number
+    //     let f = 1;
+    //     //loop starts at 2 because since we already have the first and second indexes in 0 and 1
+    //         for (let i = 2; i<= n; i ++) {
+    //             console.log(a);
+    //             f = a + b;
+    //             a = b;
+    //             b = f;
+    //         }
+    //     console.log(f);
+    //     return f;
+    // };
+    //
+    // console.log(fib(15));
+
+//recursive approach
+const fib = (n) => {
+    if (n < 2) {
+        return 1;
+    } else {
+        return fib(n - 1) + fib(n - 2);
+    };
+};
+
+console.log(fib(5));
