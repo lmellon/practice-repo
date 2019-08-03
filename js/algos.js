@@ -212,12 +212,24 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
     // console.log(fib(15));
 
 //recursive approach
-const fib = (n) => {
-    if (n < 2) {
-        return 1;
-    } else {
-        return fib(n - 1) + fib(n - 2);
-    };
-};
+    // const fib = (n) => {
+    //     if (n < 2) {
+    //         return 1;
+    //     } else {
+    //         return fib(n - 1) + fib(n - 2);
+    //     };
+    // };
+    //
 
-console.log(fib(5));
+//////////////////////////
+//      Checkerboard
+/////////////////////////
+// const boardSize = 10;
+//
+// for (i = 1; i <= 10; i ++) {
+//     if (i % 2 === 0) {
+//         console.log(" # # # # #");
+//     } else {
+//         console.log("# # # # # ");
+//     }
+// }
