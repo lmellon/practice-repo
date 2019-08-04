@@ -267,3 +267,24 @@ const printArr = (input) => {
 };
 
 // console.log(printArr(names));
+
+//////////////////////////////////
+//      Reverse a String
+//////////////////////////////////
+// Write a function called reverseString that will take a string and return the string reversed.
+
+// DECLARE a function with a parameter for input
+// SET an empty variable to contain reversed input
+// LOOP through input in reverse order
+    // ADD to empty variable
+// RETURN new variable
+
+const backwards = (input) => {
+    let reversed = ""
+    for ( let i = (input.length-1); i >= 0; i --) {
+        reversed += input[i];
+    }
+    return reversed;
+};
+
+console.log(backwards("holla"));
