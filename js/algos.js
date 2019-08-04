@@ -243,5 +243,27 @@ const grid = [
              [6, 7, 8]
             ];
 
-console.log(grid.join());
+// console.log(grid.join());
 // 0,1,2,3,4,5,6,7,8
+
+//////////////////////////////////
+//      Print An Array
+//////////////////////////////////
+//Write a function called printArr that will print the items of an array.
+    // SET function to take parameter of arry called input
+    // SET variable string to empty
+    // LOOP the length of the array
+        // ADD each element to string
+    // RETURN string
+
+const names = ['sam', 'ed', 'harry'];
+
+const printArr = (input) => {
+    let string = "";
+    for (let i = 0; i < input.length; i ++) {
+        string += `${input[i]} \n`
+    };
+    return string;
+};
+
+// console.log(printArr(names));
