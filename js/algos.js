@@ -287,4 +287,21 @@ const backwards = (input) => {
     return reversed;
 };
 
-console.log(backwards("holla"));
+// console.log(backwards("holla"));
+
+// Second solution
+// DECLARE a function that takes a parameter called input
+// SET a varaible, reversed, to an empty array
+// LOOP through the input in reverse order
+    // PUSH into empty array called reversed
+// RETURN JOINED elements in reversed
+
+const backwards2 = (input) => {
+    let reversed = [];
+    for ( let i = (input.length - 1); i >= 0; i -- ) {
+        reversed.push(input[i]);
+    };
+    return reversed.join('');
+};
+
+console.log(backwards2('hello'));
