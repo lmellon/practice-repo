@@ -356,3 +356,36 @@ const backwards2 = (input) => {
         return largest;
     }
 // console.log(largestNumber([1,2,10]));
+
+/////////////////////////////////////////
+//      CHESS BOARD
+////////////////////////////////////////
+// Write a function called chessBoard that creates a string that represents an 8×8 grid, using newline characters to separate lines. At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
+    // DECLARE function called chessBoard
+    // SET variable called size equal to 8
+    // SET variable board equal to ''
+    // LOOP through while y is less than size
+        // LOOP through while x is less than size
+            //  IF x + y are even
+                // ADD space to board
+            // ELSE
+                // ADD # to board
+        // ADD a new line to board
+    // RETURN board
+
+    const chessBoard = () => {
+        let size = 8;
+        let board = '';
+        for (let y = 0; y < size; y ++) {
+            for (let x = 0; x < size; x ++) {
+                if ((x + y) % 2  === 0) {
+                    board += ' ';
+                } else {
+                    board += '#'
+                }
+            }
+            board += '\n'
+        }
+        return board
+    }
+console.log(chessBoard());
