@@ -304,4 +304,55 @@ const backwards2 = (input) => {
     return reversed.join('');
 };
 
-console.log(backwards2('hello'));
+// console.log(backwards2('hello'));
+
+////////////////////////////////////
+//      IsPalindrome
+///////////////////////////////////
+// Write a function called isPalindrome that will return true if a given input (string(s) or number) is a palindrome and false if it's not.
+
+    // DECLARE function that takes a parameter for the input
+    // SET new variable, reversed, to an empty string
+    // LOOP through input in reverse order
+        //  PUSH into reversed
+    // IF reversed is equal to input,
+        // RETURN true
+    // ELSE
+        // RETURN false
+
+    const isPalindrome = (input) => {
+        let forward = input.join('');
+        let reversed = "";
+        for (let i = (forward.length-1); i >= 0; i --) {
+            reversed += forward[i];
+        }
+        if (reversed === forward) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+//console.log(isPalindrome('race car'));
+
+///////////////////////////////////////
+//      Find The Largest Number
+///////////////////////////////////////
+// Write a function called largestNumber that will return the largest value from an array.
+    // DECLARE function that will take a parameter of an array
+    // SET a variable, largest, equal to the parameter's 0 index
+    //  FOR EACH element in the array
+        // IF index is greater than largest
+            // SET largest to that value
+    // RETURN largest
+
+    const largestNumber = (arr) => {
+        let largest = arr[0];
+        arr.forEach((num) => {
+            if (num > largest) {
+                largest = num
+            }
+        })
+        return largest;
+    }
+// console.log(largestNumber([1,2,10]));
