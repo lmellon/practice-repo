@@ -388,4 +388,45 @@ const backwards2 = (input) => {
         }
         return board
     }
-console.log(chessBoard());
+//console.log(chessBoard());
+
+//console.log(Math.round((1.5%0.2 * 100)/100));
+
+var x = 0
+var y = 0
+var z = 0
+x = 1
+// console.log(x = (-x + y++) * ++z);
+// console.log(-x + y++);
+// console.log(-x);
+
+////////////////////////////////
+/////       ODDS & EVENS
+////////////////////////////////
+// Write a function called oddsEvens that given a string, prints its even-indexed and odd-indexed characters as space-separated strings on a single line.
+
+    // DECLARE function that takes a parameter of input
+    // SET variable evenStorage as an empty string
+    // set variable oddStorage as an empty string
+    // LOOP through input
+        // IF index is an even number
+            // ADD to evenStorage
+        // ELSE
+            // ADD to oddStorage
+    // RETURN evenStorage and oddStorage
+
+    const evenOddSort = (input) => {
+        let evenStorage = '';
+        let oddStorage = '';
+        for (let i = 0; i < input.length; i ++) {
+            if (i % 2 === 0) {
+                evenStorage += input[i]
+            } else {
+                oddStorage += input[i]
+            }
+        }
+        // return `${evenStorage} ${oddStorage}`
+        return evenStorage + " " + oddStorage
+    }
+
+// console.log(evenOddSort('characters'));
