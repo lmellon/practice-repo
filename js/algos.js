@@ -430,3 +430,51 @@ x = 1
     }
 
 // console.log(evenOddSort('characters'));
+
+///////////////////////////
+//      LIKES
+///////////////////////////
+// Write a function called likes which takes in input array, containing the names of people who like an item. It must return the display text as shown in the examples and is dependent on the number of elements in the array.
+//
+// Input: likes([])
+// Output: "no one likes this"
+//
+// Input: likes(["Peter"])
+// Output: "Peter likes this"
+//
+// Input: likes(["Jacob", "Alex"])
+// Output: "Jacob and Alex like this"
+//
+// Input: likes(["Max", "John", "Mark"])
+// Output: "Max, John and Mark like this"
+//
+// Input: likes(["Alex", "Jacob", "Mark", "Max"])
+// Output: "Alex, Jacob and 2 others like this"
+
+    // DECLARE a function that take a parameter of an array
+    // IF array is empty
+        // RETURN "no one likes this"
+    // ELSE IF array has one element
+        // RETURN "element + likes this"
+    // ELSE IF array has 2 elements
+        //  RETURN "element 1 and element 2 like this"
+    // ELSE IF array has 3 elements
+        // RETURN "element 1, element 2 and element 3 like this"
+    // ELSE IF array has 4 elements,
+        // RETURN "element 1, element 2 and 2 others like this"
+
+const whoLikes = (arr) => {
+    if (arr.length == 0) {
+        return "no one likes this"
+    } else if (arr.length == 1) {
+        return arr[0] + " likes this."
+    } else if (arr.length == 2) {
+        return arr[0] + " and " + arr[1] + " like this."
+    } else if (arr.length == 3) {
+        return arr[0] + ", " + arr[1] + " and " + arr[2] + " like this."
+    } else {
+        return arr[0] + ", " + arr[1] + " and " + (arr.length - 2) + " others like this."
+    }
+}
+
+// console.log(whoLikes(["Peter", "Jacob", "Alex", "Max", "Paul"]));
