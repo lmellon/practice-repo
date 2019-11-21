@@ -3,12 +3,26 @@ const greeting = 'Hello World';
 
 sample = [1,2,0]
 sample2 = [4,1,3,4,2]
+sample3 = [1,2,3,4,4,3,2,1,0]
+// const distinctValues = (seed) => {
+//     return new Set(seed).size;
+// };
+
+//console.log(distinctValues(sample));
+//console.log(distinctValues(sample2));
 
 const distinctValues = (seed) => {
-    return new Set(seed).size;
-};
+    let obj = {};
 
-console.log(distinctValues(sample));
-console.log(distinctValues(sample2));
+    seed.forEach( num => {
+        if(!obj[num]) {
+            obj[num] = 0;
+        }
+        obj[num] ++;
+    })
+    console.log(obj);
+    console.log(Object.keys(obj).length);
+    return Object.keys(obj).length;
+}
 
-_.uniq(sample).length;
+distinctValues(sample);
