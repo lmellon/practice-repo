@@ -29,7 +29,7 @@ const greeting = 'Hello World';
 // QUESTION 3
 
 let columnA = [1,2,3,4,5];
-let columnB = [1,2,3,4,5,6,7];
+let columnB = [1,2,3,4,5,6];
 
 
 const compare = (arr1, arr2) => {
@@ -47,3 +47,15 @@ const compare = (arr1, arr2) => {
     return (Object.keys(integers).find(key => integers[key] === 1));
 }
 // compare(columnB, columnA);
+
+const findMissingInteger = (totalIntegers, arr) => {
+    let missingNum ;
+    for (let i = 1; i <= totalIntegers; i ++ ) {
+        if(arr.indexOf(i) == -1) {
+            missingNum = i;
+        }
+    }
+    return missingNum;
+}
+
+findMissingInteger(7, columnB)
